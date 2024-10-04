@@ -12,6 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 public interface ICategoryRepository extends JpaRepository<Category, Long> {
     @Modifying
     @Transactional
-    @Query(nativeQuery = true, value = " call deleteCategory_id(: id)")
-    void  deleteByIdCategory(@Param("id") Long id);
+    @Query(nativeQuery = true, value = "call deleteCategory_id(:id)")
+    void deleteByIdCategory(@Param("id") Long id);
 }
