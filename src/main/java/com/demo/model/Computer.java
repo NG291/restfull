@@ -20,5 +20,4 @@ public class Computer {
     @ManyToOne
     private Category category;
 
-
 }

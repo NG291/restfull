@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="category.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="computer.js"></script>
+</head>
+<body>
+
+<div id="navigation">
+    <a href="category.html">Go to Category Page</a>
+</div>
+
+<h1>Computer Management</h1>
+
+<h3>Computer List</h3>
+<table id="computer-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Category Name</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="computer-body">
+
+    </tbody>
+</table>
+
+<div>
+    <h2>Computer Form</h2>
+    <form id="computer-form">
+        <input type="hidden" id="computer-id">
+        <label for="code">Code:</label>
+        <input type="text" id="code" placeholder="Enter code" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+
+        <label for="manufacturer">Manufacturer:</label>
+        <input type="text" id="manufacturer" placeholder="Enter manufacturer" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter price" required>
+
+        <label for="img">Image URL:</label>
+        <input type="text" id="img" placeholder="Enter image URL" required>
+
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="">Select a category</option>
+            <!-- Options for categories will be populated here -->
+        </select>
+
+        <button type="submit" id="computer-submit-button">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

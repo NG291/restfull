@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Management</title>
+    <link rel="stylesheet" href=category.css>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="category.js"></script>
+</head>
+<body>
+
+<div id="navigation">
+    <a href="computer.html">Manage Computer</a>
+</div>
+
+<h1>Category Management</h1>
+
+<div>
+    <h2>Category Form</h2>
+    <form id="category-form">
+        <input type="hidden" id="category-id">
+        <label for="category-name"> Category Name:</label>
+        <input type="text" id="category-name" placeholder="Enter category name" required>
+        <button type="submit" id="category-submit-button">Add Category</button>
+    </form>
+</div>
+
+<h3>Class List</h3>
+<table border="1" id="category-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th> Name</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="category-body">
+    </tbody>
+</table>
+
+</body>
+</html>
